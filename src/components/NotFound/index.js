@@ -3,7 +3,7 @@ import './index.css'
 
 const NotFound = () => (
   <div>
-    <h1>jhbk</h1>
+    <h1>jhbksfas</h1>
   </div>
 )
 
