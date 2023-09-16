@@ -25,3 +25,16 @@ li {
 .link {
   text-decoration: none;
 }
+.dark-nav {
+  color: #000;
+}
+.grey-nav {
+  background-color: #334155;
+}
+.light-nav {
+  color: #fff;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+}

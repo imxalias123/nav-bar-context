@@ -12,23 +12,25 @@ const Home = () => (
           {isDarkTheme ? (
             <div>
               <Navbar />
-              <div>
+              <div className="body-container dark">
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/home-dark-img.png"
                   alt="home"
+                  className="body-img"
                 />
-                <h1>Home</h1>
+                <h1 className="dark">Home</h1>
               </div>
             </div>
           ) : (
             <div>
               <Navbar />
-              <div>
+              <div className="body-container light">
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/home-light-img.png"
                   alt="home"
+                  className="body-img"
                 />
-                <h1>Home</h1>
+                <h1 className="light">Home</h1>
               </div>
             </div>
           )}

@@ -5,8 +5,29 @@
   justify-content: center;
   align-items: center;
 }
+.dark {
+  background-color: #000000;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #000000;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .home-img {
   width: 80px;
+}
+.body-img {
+  width: 200px;
+  margin-top: 100px;
 }
 @media (min-width: 768px) {
   .home-img {

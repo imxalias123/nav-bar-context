@@ -10,53 +10,70 @@ const Navbar = () => (
       const onClickDayNight = () => {
         toggleTheme()
       }
-
+      console.log(isDarkTheme)
       return (
         <>
           {isDarkTheme ? (
-            <div className="nav-container">
+            <div className="nav-container grey-nav">
               <img
-                src="https://assets.ccbp.in/frontend/react-js/light-theme-img.png"
-                alt="website-logo"
+                src="https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png"
+                alt="website logo"
                 className="website-logo"
               />
               <ul className="link-container">
                 <Link to="/" className="link">
-                  <li>Home</li>
+                  <li>
+                    <p className="light-nav">Home</p>
+                  </li>
                 </Link>
                 <Link to="/about" className="link">
-                  <li>About</li>
+                  <li>
+                    <p className="light-nav">About</p>
+                  </li>
                 </Link>
               </ul>
-              <button type="button" onClick={onClickDayNight}>
+              <button
+                type="button"
+                data-testid="theme"
+                onClick={onClickDayNight}
+                className="btn"
+              >
                 <img
-                  src="https://assets.ccbp.in/frontend/react-js/dark-theme-img.png"
-                  alt="light"
+                  src="https://assets.ccbp.in/frontend/react-js/light-theme-img.png"
+                  alt="theme"
                   className="day-night-theme"
                 />
               </button>
             </div>
           ) : (
-            <div className="nav-container">
+            <div className="nav-container light-nav">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/website-logo-light-theme-img.png"
-                alt="website-logo"
+                alt="website logo"
                 className="website-logo"
               />
               <ul className="link-container">
-                <Link to="/home">
-                  <li>Home</li>
+                <Link to="/" className="link">
+                  <li>
+                    <p className="dark-nav">Home</p>
+                  </li>
                 </Link>
-                <Link to="/about">
-                  <li>About</li>
+                <Link to="/about" className="link">
+                  <li>
+                    <p className="dark-nav">About</p>
+                  </li>
                 </Link>
               </ul>
-              <button type="button" onClick={onClickDayNight}>
+              <button
+                type="button"
+                data-testid="theme"
+                onClick={onClickDayNight}
+                className="btn"
+              >
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/dark-theme-img.png"
-                  alt="light"
-                  className="day-night-theme"
-                  onClick={onClickDayNight}
+                  alt="theme"
+                  className="light"
                 />
               </button>
             </div>

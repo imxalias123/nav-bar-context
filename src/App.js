@@ -21,7 +21,6 @@ class App extends Component {
 
   render() {
     const {isDarkTheme} = this.state
-    console.log(isDarkTheme)
 
     return (
       <ThemeContext.Provider
