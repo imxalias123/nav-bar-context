@@ -1,0 +1,27 @@
+/* Write your CSS here */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  box-shadow: 0px 0px 0px 1px;
+}
+.website-logo {
+  width: 40px;
+  height: 40px;
+}
+.link-container {
+  list-style-type: none;
+  display: flex;
+}
+.day-night-theme {
+  width: 40px;
+  height: 40px;
+}
+li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.link {
+  text-decoration: none;
+}
